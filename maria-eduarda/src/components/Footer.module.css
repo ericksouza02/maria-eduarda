@@ -1,0 +1,19 @@
+/* src/components/Footer/Footer.module.css */
+.footerContainer {
+  text-align: center;
+  margin-top: 80px; /* Mais espaço acima do footer */
+  padding: 30px 20px;
+  background-color: #FFFFFF; /* Fundo branco */
+  border-top: 1px solid #EAEAEA; /* Borda sutil */
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03); /* Sombra suave */
+  color: #777;
+  font-size: 0.95em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footerContainer {
+    margin-top: 60px;
+    padding: 20px 15px;
+  }
+}

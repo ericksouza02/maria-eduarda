@@ -1,0 +1,54 @@
+/* src/components/Header/Header.module.css */
+.headerContainer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #FFFFFF; /* Fundo branco para manter a leveza */
+  border-bottom: 1px solid #EAEAEA;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3.8em; /* Deixei um pouco maior para realçar o nome */
+  color: #333; /* Cor escura para o nome */
+  margin-bottom: 10px;
+  letter-spacing: -0.05em; /* Um pouco mais apertado para elegância */
+  font-weight: 700; /* Garante que seja negrito */
+}
+
+/* Adicionando um destaque rosa apenas para o "Maria Eduarda" */
+/* NOTA: Isso será feito via span no JSX do componente */
+.highlight {
+  color: #FF6B81; /* O tom de rosa */
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  color: #777;
+  font-weight: 400;
+  margin-top: 5px; /* Ajuste para ter um pouco de espaço entre o nome e a profissão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 30px 15px;
+    margin-bottom: 40px;
+  }
+  .title {
+    font-size: 2.8em; /* Ajuste para telas menores */
+  }
+  .subtitle {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.2em; /* Ainda menor para celulares */
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+}
